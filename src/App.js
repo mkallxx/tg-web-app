@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <Welcome />
+      <button className="close">Закрыть</button>
     </div>
   );
 }

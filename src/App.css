@@ -12,3 +12,14 @@ body {
   width: 350px;
   font-family: 'Raleway', sans-serif;
 }
+
+.close {
+  position: absolute;
+  bottom: 15px;
+  width: 60%;
+  height: 35px;
+  border: none;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  cursor: pointer;
+}
