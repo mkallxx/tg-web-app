@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,6 @@
 body {
   background-color: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
+  width: 400px;
+  font-family: 'Raleway', sans-serif;
 }
