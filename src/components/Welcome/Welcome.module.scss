@@ -17,6 +17,15 @@
       color: var(--tg-theme-button-text-color);
       padding: 5px 15px;
       margin-top: 10px;
+      border-radius: 3px;
+    }
+
+    a:first-child {
+      margin-right: 20px;
+    }
+
+    a:last-child {
+      margin-left: 20px;
     }
   }
 }
