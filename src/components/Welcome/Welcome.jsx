@@ -7,8 +7,9 @@ const Welcome = () => {
         <h2>Категории товаров</h2>
 
         <h3>Прочее: </h3>
-        <a href="/">Twitter Blue</a>
+        <a href="/">Twitter Blue (галочка ✔️)</a>
         <h3>Аккаунты:</h3>
+
         <a href="/">Twitter</a>
         <a href="/">Discord</a>
         <a href="/">Instagram</a>
