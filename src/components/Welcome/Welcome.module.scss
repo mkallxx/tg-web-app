@@ -1,24 +1,22 @@
 .wrapper {
   .category {
-    margin-top: 30px;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 50px;
+    h2 {
+      font-size: 18px;
+    }
 
     h3 {
+      font-size: 16px;
       margin-top: 20px;
+      padding-bottom: 15px;
     }
 
     a {
-      margin-top: 7px;
       text-decoration: none;
-      color: #fff;
       background-color: var(--tg-theme-button-color);
       color: var(--tg-theme-button-text-color);
-      width: 150px;
-      padding: 7px 0px;
-      padding-left: 20px;
-      border-radius: 4px;
+      padding: 5px 15px;
+      margin-top: 10px;
     }
   }
 }
