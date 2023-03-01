@@ -21,35 +21,35 @@ const getTotalPrice = (items = []) => {
 };
 
 const ProductList = ({ category }) => {
-  const { tg } = useTelegram();
-  const [addedItems, setAddedItems] = useState([]);
+  // const { tg } = useTelegram();
+  // const [addedItems, setAddedItems] = useState([]);
 
-  const onAdd = (product) => {
-    const alreadyAdded = addedItems.find((item) => item.id === product.id);
-    let newItems = [];
+  // const onAdd = (product) => {
+  //   const alreadyAdded = addedItems.find((item) => item.id === product.id);
+  //   let newItems = [];
 
-    if (alreadyAdded) {
-      newItems = addedItems.filter((item) => item.id !== product.id);
-    } else {
-      newItems = [...addedItems, product];
-    }
+  //   if (alreadyAdded) {
+  //     newItems = addedItems.filter((item) => item.id !== product.id);
+  //   } else {
+  //     newItems = [...addedItems, product];
+  //   }
 
-    setAddedItems(newItems);
+  //   setAddedItems(newItems);
 
-    if (newItems.length === 0) {
-      tg.MainButton.hide();
-    } else {
-      tg.MainButton.show();
-      tg.MainButton.setParams({
-        text: `Купить ${getTotalPrice(newItems)}`,
-      });
-    }
-  };
+  //   if (newItems.length === 0) {
+  //     tg.MainButton.hide();
+  //   } else {
+  //     tg.MainButton.show();
+  //     tg.MainButton.setParams({
+  //       text: `Купить ${getTotalPrice(newItems)}`,
+  //     });
+  //   }
+  // };
 
   return (
     <div className={styles.list}>
       {products.map((item) => (
-        <ProductItem product={item} onAdd={onAdd} />
+        <ProductItem key={item.id} product={item} />
       ))}
     </div>
   );

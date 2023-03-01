@@ -7,18 +7,9 @@ const ProductItem = ({ product, onAdd }) => {
   };
 
   return (
-    <div>
-      <div className={styles.img} />
-      <div className={styles.title}>{product.title}</div>
-      <div className={styles.description}>{product.description}</div>
-      <div className={styles.price}>
-        <span>
-          <b>{product.price}</b>
-        </span>
-      </div>
-      <Button className={styles.addBtn} onClick={onAddHandler}>
-        Добавить в корзину
-      </Button>
+    <div className={styles.item}>
+      <div>{product.title}</div>
+      <div>{product.description}</div>
     </div>
   );
 };

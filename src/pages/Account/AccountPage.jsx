@@ -19,11 +19,11 @@ const AccountPage = () => {
     } else if (params === '/instagram-accounts') {
       setCategory('Instagram');
     }
-  }, [location.pathname]);
+  }, []);
 
   return (
     <div>
-      <ProductList key={1} category={category} />
+      <ProductList />
     </div>
   );
 };
